@@ -1,0 +1,54 @@
+name: Bug Report
+description: Report a bug in the application.
+title: "[Bug]"
+labels: ["type:bug"]
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the bug and how it affects use of the application.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: List the steps and any initial conditions needed to reproduce the bug.
+      placeholder: |
+        1. Otwórz...
+        2. Wybierz...
+        3. Wykonaj...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: Describe what should happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: Describe what happens instead, including any error messages.
+    validations:
+      required: true
+
+  - type: textarea
+    id: info
+    attributes:
+      label: Additional Information
+      description: Add environment details and any relevant screenshots or logs. You can attach files here.
+      placeholder: |
+        Wersja aplikacji:
+        System i przeglądarka:
+        Częstotliwość występowania:
+        Zrzuty ekranu lub logi:
+    validations:
+      required: false

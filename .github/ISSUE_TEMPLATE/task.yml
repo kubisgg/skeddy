@@ -1,0 +1,35 @@
+name: Task
+description: Describe a standalone task or a sub-issue of a User Story.
+title: "[Task]"
+labels: ["type:task"]
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe what needs to be done and why.
+      placeholder: |
+        Cel zadania:
+        Zakres prac:
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Define the conditions that must be met for this task to be considered complete.
+      placeholder: |
+        - [ ] Kryterium 1
+        - [ ] Kryterium 2
+    validations:
+      required: true
+
+  - type: textarea
+    id: info
+    attributes:
+      label: Additional Information
+      description: Add any relevant context, dependencies, references, or mockups.
+    validations:
+      required: false
