@@ -1,0 +1,23 @@
+{
+  "name": "skeddy",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^4.13.1",
+    "nuxt": "^4.7.0",
+    "tailwindcss": "^4.3.5",
+    "vue": "^3.5.45",
+    "vue-router": "^5.4.0"
+  },
+  "packageManager": "pnpm@11.22.0",
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.159"
+  }
+}
