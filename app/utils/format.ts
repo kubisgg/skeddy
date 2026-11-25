@@ -8,6 +8,15 @@ export function formatPrice(pln: number) {
   return priceFormatter.format(pln)
 }
 
+const ratingFormatter = new Intl.NumberFormat('pl-PL', {
+  minimumFractionDigits: 1,
+  maximumFractionDigits: 1
+})
+
+export function formatRating(rating: number) {
+  return ratingFormatter.format(rating)
+}
+
 export function formatDuration(minutes: number) {
   const hours = Math.floor(minutes / 60)
   const rest = minutes % 60

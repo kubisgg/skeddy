@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { salon, services } = useSalonOffer()
+const { salon, services, employees } = useSalonOffer()
 
 useHead({ title: `${salon.name} | Skeddy` })
 useSeoMeta({ description: salon.description })
@@ -22,6 +22,9 @@ useSeoMeta({ description: salon.description })
       <ServiceList :services="services" />
     </div>
 
-    <SalonDetails :salon="salon" class="lg:sticky lg:top-[calc(var(--ui-header-height)+1.5rem)]" />
+    <div class="grid gap-6">
+      <SalonDetails :salon="salon" />
+      <EmployeeList :employees="employees" :opening-hours="salon.openingHours" />
+    </div>
   </UContainer>
 </template>

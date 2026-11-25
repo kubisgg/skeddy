@@ -33,5 +33,10 @@
     { "id": "beard-coloring", "name": "Koloryzacja brody", "price": 70, "durationMinutes": 30, "active": false },
     { "id": "kids-haircut", "name": "Strzyżenie dziecięce (do 12 lat)", "price": 50, "durationMinutes": 30, "active": true },
     { "id": "grey-blending", "name": "Kamuflaż siwizny", "price": 80, "durationMinutes": 30, "active": true }
+  ],
+  "employees": [
+    { "id": "kuba-nowak", "name": "Kuba Nowak", "role": "Właściciel, barber", "categories": ["Włosy", "Broda"], "workDays": ["mon", "tue", "wed", "thu", "fri", "sat"], "rating": { "average": 4.9, "count": 214 }, "active": true },
+    { "id": "ola-wisniewska", "name": "Ola Wiśniewska", "role": "Barberka", "categories": ["Włosy", "Farbowanie"], "workDays": ["mon", "tue", "wed", "thu", "fri", "sat"], "rating": { "average": 4.7, "count": 156 }, "active": true },
+    { "id": "marek-zielinski", "name": "Marek Zieliński", "role": "Barber", "categories": ["Włosy", "Broda"], "workDays": ["tue", "thu", "sat"], "rating": { "average": 4.3, "count": 58 }, "active": true }
   ]
 }
