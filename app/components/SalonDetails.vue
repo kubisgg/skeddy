@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Salon } from '~/composables/useSalonOffer'
 
-defineProps<{ salon: Omit<Salon, 'services'> }>()
+defineProps<{ salon: Omit<Salon, 'services' | 'employees'> }>()
 
 const SALON_TIME_ZONE = 'Europe/Warsaw'
 const WEEKDAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
