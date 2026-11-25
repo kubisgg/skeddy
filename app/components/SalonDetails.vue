@@ -3,12 +3,25 @@ import type { Salon } from '~/composables/useSalonOffer'
 
 defineProps<{ salon: Omit<Salon, 'services'> }>()
 
-// Set after mount: the server's weekday may differ from the visitor's,
-// which would cause a hydration mismatch.
+const SALON_TIME_ZONE = 'Europe/Warsaw'
+const WEEKDAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+const weekdayFormatter = new Intl.DateTimeFormat('en-US', { timeZone: SALON_TIME_ZONE, weekday: 'short' })
+
+function salonWeekdayIndex() {
+  return WEEKDAYS.indexOf(weekdayFormatter.format(new Date()))
+}
+
 const todayIndex = ref<number | null>(null)
+let refreshTimer: ReturnType<typeof setInterval> | undefined
+
 onMounted(() => {
-  todayIndex.value = (new Date().getDay() + 6) % 7
+  todayIndex.value = salonWeekdayIndex()
+  refreshTimer = setInterval(() => {
+    todayIndex.value = salonWeekdayIndex()
+  }, 60_000)
 })
+
+onBeforeUnmount(() => clearInterval(refreshTimer))
 </script>
 
 <template>
