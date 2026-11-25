@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: 'Schibsted Grotesk', system-ui, sans-serif;
+
+  --color-plum-50: #fbf4f8;
+  --color-plum-100: #f6e8f0;
+  --color-plum-200: #edd0e1;
+  --color-plum-300: #dfaac8;
+  --color-plum-400: #c977a5;
+  --color-plum-500: #b05285;
+  --color-plum-600: #93396b;
+  --color-plum-700: #792d58;
+  --color-plum-800: #5b2245;
+  --color-plum-900: #4a1b38;
+  --color-plum-950: #2d0d21;
+}
+
+:root {
+  --ui-primary: var(--ui-color-primary-800);
+  --ui-text: var(--ui-color-neutral-900);
+}

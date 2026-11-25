@@ -1,0 +1,37 @@
+{
+  "name": "Barber Odra",
+  "category": "Barber",
+  "description": "Klasyczne strzyżenie, fade i golenie brzytwą. Trzy fotele, kawa w cenie.",
+  "address": {
+    "street": "ul. Wyspowa 3",
+    "postalCode": "50-123",
+    "city": "Wrocław"
+  },
+  "openingHours": [
+    { "day": "Poniedziałek", "hours": "10:00–20:00" },
+    { "day": "Wtorek", "hours": "10:00–20:00" },
+    { "day": "Środa", "hours": "10:00–20:00" },
+    { "day": "Czwartek", "hours": "10:00–20:00" },
+    { "day": "Piątek", "hours": "10:00–20:00" },
+    { "day": "Sobota", "hours": "09:00–16:00" },
+    { "day": "Niedziela", "hours": null }
+  ],
+  "photos": [
+    { "src": "/images/salon/interior.jpg", "alt": "Wnętrze barbera z ceglaną ścianą i skórzanymi fotelami" },
+    { "src": "/images/salon/fade.jpg", "alt": "Barber cieniuje boki maszynką" },
+    { "src": "/images/salon/beard-shave.jpg", "alt": "Golenie brody z pianą" },
+    { "src": "/images/salon/tools.jpg", "alt": "Maszynki, nożyczki i kosmetyki na drewnianym blacie" }
+  ],
+  "services": [
+    { "id": "mens-haircut", "name": "Strzyżenie męskie", "price": 80, "durationMinutes": 45, "active": true },
+    { "id": "skin-fade", "name": "Skin fade", "price": 90, "durationMinutes": 50, "active": true },
+    { "id": "clipper-cut", "name": "Strzyżenie maszynką", "price": 60, "durationMinutes": 30, "active": true },
+    { "id": "long-hair-cut", "name": "Strzyżenie długich włosów", "price": 100, "durationMinutes": 60, "active": true },
+    { "id": "beard-trim", "name": "Trymowanie brody", "price": 60, "durationMinutes": 30, "active": true },
+    { "id": "hot-towel-shave", "name": "Golenie brzytwą na gorąco", "price": 70, "durationMinutes": 40, "active": true },
+    { "id": "haircut-and-beard", "name": "Strzyżenie + broda", "price": 130, "durationMinutes": 75, "active": true },
+    { "id": "beard-coloring", "name": "Koloryzacja brody", "price": 70, "durationMinutes": 30, "active": false },
+    { "id": "kids-haircut", "name": "Strzyżenie dziecięce (do 12 lat)", "price": 50, "durationMinutes": 30, "active": true },
+    { "id": "grey-blending", "name": "Kamuflaż siwizny", "price": 80, "durationMinutes": 30, "active": true }
+  ]
+}
